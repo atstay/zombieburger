@@ -1,0 +1,16 @@
+body {
+    background-color: #080808;
+  }
+  
+  img {
+    width: 15%;
+  }
+  
+  .red_font {
+    color: #bc001f;
+  }
+  
+  .tiny_text {
+    font-size: 8px;
+    color: #30680d;
+  }
