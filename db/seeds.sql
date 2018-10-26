@@ -1,3 +1,3 @@
-INSERT INTO burgers (burger_name) VALUES ('Racist Darum Murder Burger');
-INSERT INTO burgers (burger_name) VALUES ('Nazi Corpse Burger');
-INSERT INTO burgers (burger_name) VALUES ('Backstabber Burger');
+INSERT INTO burgers (burger_name) VALUES ('Old Hobo Corpse Burger');
+INSERT INTO burgers (burger_name) VALUES ('Head, Shoulders, Knees, and Toes Burger');
+INSERT INTO burgers (burger_name) VALUES ('An Arm and A Leg Burger');
