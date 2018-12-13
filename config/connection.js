@@ -1,16 +1,20 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
 
-var connection = mysql.createConnection({
-  host: "us-cdbr-iron-east-01.cleardb.net",
-  port: 3306,
-  user: "ba847175ed5197",
-  password: "1f28d958",
-  database: "heroku_593520653950a97"
-});
+var connection;
 
-//ba847175ed5197:1f28d958@us-cdbr-iron-east-01.cleardb.net/heroku_593520653950a97?reconnect=true
-
+// For Heroku Deployment vs. Local MySQL Database
+if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  connection = mysql.createConnection({
+    host: "localhost",
+    port: 3306,
+    user: "root",
+    password: "denveruniversity",
+    database: "burgers_db"
+  });
+}
 // Connect to MySQL database
 connection.connect(function(err) {
   if (err) {
